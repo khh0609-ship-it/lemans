@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="mobGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#mobGrad)"/>
+
+  <!-- Speed Stream Lines -->
+  <g stroke="#34d399" stroke-opacity="0.2" stroke-width="2">
+    <line x1="50" y1="360" x2="750" y2="360"/>
+    <line x1="80" y1="380" x2="720" y2="380"/>
+    <line x1="120" y1="400" x2="680" y2="400"/>
+  </g>
+
+  <!-- Electric Vehicle Silhouette & Inverter -->
+  <g transform="translate(400, 240)">
+    <!-- Aerodynamic EV Body Silhouette -->
+    <path d="M -220 50 C -200 -20, -120 -60, -30 -60 C 60 -60, 150 -20, 210 50 Z" fill="#047857" fill-opacity="0.3" stroke="#10b981" stroke-width="2"/>
+    <path d="M -110 -10 C -70 -50, 40 -50, 90 -10 Z" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+
+    <!-- High-Voltage Battery & Inverter Pack -->
+    <rect x="-80" y="20" width="160" height="40" rx="8" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
+    <!-- Heat Dissipation Cooling Fins -->
+    <g stroke="#38bdf8" stroke-width="1.5">
+      <line x1="-60" y1="20" x2="-60" y2="60"/>
+      <line x1="-40" y1="20" x2="-40" y2="60"/>
+      <line x1="-20" y1="20" x2="-20" y2="60"/>
+      <line x1="0" y1="20" x2="0" y2="60"/>
+      <line x1="20" y1="20" x2="20" y2="60"/>
+      <line x1="40" y1="20" x2="40" y2="60"/>
+      <line x1="60" y1="20" x2="60" y2="60"/>
+    </g>
+
+    <!-- Power Inverter Bolt Icon -->
+    <polygon points="5,-15 -10,8 2,8 -5,28 15,4 2,4" fill="#facc15" stroke="#fef08a" stroke-width="1"/>
+  </g>
+
+  <!-- Title Overlay -->
+  <text x="400" y="425" font-family="'Pretendard', sans-serif" font-weight="700" font-size="20" fill="#d1fae5" text-anchor="middle" letter-spacing="1">E-MOBILITY INVERTER & THERMAL SYSTEMS</text>
+  <text x="400" y="450" font-family="'Pretendard', sans-serif" font-weight="500" font-size="13" fill="#6ee7b7" text-anchor="middle" letter-spacing="2">TU KOREA CARBON NEUTRAL & MOBILITY CENTER</text>
+</svg>

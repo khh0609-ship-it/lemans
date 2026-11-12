@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="transGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b18"/>
+      <stop offset="50%" stop-color="#451a03"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#transGrad)"/>
+
+  <!-- Golden Partnership Waves -->
+  <g fill="none" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="1.5">
+    <circle cx="280" cy="220" r="140"/>
+    <circle cx="520" cy="220" r="140"/>
+    <circle cx="400" cy="220" r="190" stroke-dasharray="8 6"/>
+  </g>
+
+  <!-- Laser Optics Speckle Reduction Beam -->
+  <g transform="translate(400, 220)">
+    <!-- Laser Emitter left -->
+    <rect x="-240" y="-12" width="50" height="24" rx="4" fill="#334155" stroke="#64748b"/>
+    <!-- Speckle Noise Reduction Filter -->
+    <circle cx="-130" cy="0" r="35" fill="#f59e0b" fill-opacity="0.15" stroke="#fbbf24" stroke-width="2"/>
+    <path d="M -190 0 L -130 0" stroke="#ef4444" stroke-width="4"/>
+    <path d="M -130 0 L 0 0" stroke="#f59e0b" stroke-width="3" stroke-dasharray="4 2"/>
+    
+    <!-- Central Patent Node (Contract & Tech) -->
+    <circle cx="0" cy="0" r="55" fill="#78350f" fill-opacity="0.8" stroke="#fde68a" stroke-width="3"/>
+    <polygon points="0,-30 25,-15 25,18 0,32 -25,18 -25,-15" fill="#d97706" stroke="#fef3c7" stroke-width="1.5"/>
+    <text x="0" y="6" font-family="'Pretendard', sans-serif" font-weight="900" font-size="18" fill="#ffffff" text-anchor="middle">R&amp;D</text>
+
+    <!-- Transferred Enterprise Node right -->
+    <path d="M 0 0 L 130 0" stroke="#10b981" stroke-width="3"/>
+    <rect x="130" y="-30" width="80" height="60" rx="12" fill="#065f46" stroke="#34d399" stroke-width="2"/>
+    <text x="170" y="6" font-family="'Pretendard', sans-serif" font-weight="700" font-size="14" fill="#ecfdf5" text-anchor="middle">BIZ</text>
+  </g>
+
+  <!-- Title Overlay -->
+  <text x="400" y="425" font-family="'Pretendard', sans-serif" font-weight="700" font-size="20" fill="#fef3c7" text-anchor="middle" letter-spacing="1">PATENT TECH TRANSFER & COMMERCIALIZATION</text>
+  <text x="400" y="450" font-family="'Pretendard', sans-serif" font-weight="500" font-size="13" fill="#fde68a" text-anchor="middle" letter-spacing="2">TU KOREA INDUSTRIAL COOPERATION FOUNDATION</text>
+</svg>

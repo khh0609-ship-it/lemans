@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bioGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#022c22"/>
+      <stop offset="50%" stop-color="#064e3b"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="cellGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+    <linearGradient id="cellGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <filter id="bioGlow">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#bioGrad)" />
+
+  <!-- 3D Print Grid Bed -->
+  <g stroke="#10b981" stroke-opacity="0.12" stroke-width="1.2">
+    <ellipse cx="400" cy="380" rx="280" ry="80" fill="#042f2e" fill-opacity="0.5"/>
+    <ellipse cx="400" cy="380" rx="200" ry="55" fill="none"/>
+    <ellipse cx="400" cy="380" rx="120" ry="32" fill="none"/>
+  </g>
+
+  <!-- Extruder / Nozzle Beam -->
+  <g transform="translate(400, 70)">
+    <polygon points="-25,0 25,0 10,70 -10,70" fill="#334155" stroke="#64748b" stroke-width="1.5"/>
+    <rect x="-4" y="70" width="8" height="25" fill="#94a3b8"/>
+    <!-- Laser / Bioprinting Jet -->
+    <path d="M 0 95 L -15 160 H 15 Z" fill="#34d399" fill-opacity="0.25" filter="url(#bioGlow)"/>
+    <circle cx="0" cy="95" r="4" fill="#a7f3d0"/>
+  </g>
+
+  <!-- Tissue Spheroid Clusters (3D Cells) -->
+  <g transform="translate(400, 260)">
+    <!-- Vascular Network (Blood vessels) -->
+    <path d="M -120 40 Q -50 0 0 -20 T 130 30" stroke="#f43f5e" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.85"/>
+    <path d="M -40 10 Q 20 40 60 70" stroke="#fb7185" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 20 -20 Q -10 -60 40 -80" stroke="#fda4af" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.7"/>
+
+    <!-- Cell Spheroids -->
+    <circle cx="-60" cy="15" r="28" fill="url(#cellGrad1)" opacity="0.85" filter="url(#bioGlow)"/>
+    <circle cx="45" cy="20" r="32" fill="url(#cellGrad1)" opacity="0.9" filter="url(#bioGlow)"/>
+    <circle cx="0" cy="-35" r="26" fill="url(#cellGrad2)" opacity="0.85" filter="url(#bioGlow)"/>
+    <circle cx="-35" cy="-20" r="18" fill="url(#cellGrad1)" opacity="0.7"/>
+    <circle cx="65" cy="-25" r="20" fill="url(#cellGrad2)" opacity="0.75"/>
+    <circle cx="10" cy="35" r="22" fill="url(#cellGrad2)" opacity="0.8"/>
+    <circle cx="-95" cy="30" r="15" fill="url(#cellGrad1)" opacity="0.6"/>
+
+    <!-- Microneedle / Scaffolding Array -->
+    <g stroke="#6ee7b7" stroke-width="1.5" opacity="0.4">
+      <line x1="-100" y1="80" x2="-100" y2="40"/>
+      <line x1="-50" y1="80" x2="-50" y2="35"/>
+      <line x1="0" y1="80" x2="0" y2="30"/>
+      <line x1="50" y1="80" x2="50" y2="45"/>
+      <line x1="100" y1="80" x2="100" y2="40"/>
+    </g>
+  </g>
+
+  <!-- Labels -->
+  <text x="400" y="425" font-family="'Pretendard', sans-serif" font-weight="700" font-size="20" fill="#a7f3d0" text-anchor="middle" letter-spacing="1">3D BIOPRINTED VASCULAR TISSUE</text>
+  <text x="400" y="450" font-family="'Pretendard', sans-serif" font-weight="500" font-size="13" fill="#6ee7b7" text-anchor="middle" letter-spacing="2">TU KOREA BIOPRINTING CENTER</text>
+</svg>

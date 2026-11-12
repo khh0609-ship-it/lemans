@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="robotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" fill="url(#robotGrad)"/>
+
+  <!-- Neural Network Background Lines -->
+  <g stroke="#818cf8" stroke-width="1.2" opacity="0.25">
+    <line x1="100" y1="150" x2="250" y2="100"/>
+    <line x1="100" y1="250" x2="250" y2="100"/>
+    <line x1="100" y1="350" x2="250" y2="250"/>
+    <line x1="250" y1="100" x2="400" y2="180"/>
+    <line x1="250" y1="250" x2="400" y2="180"/>
+    <line x1="250" y1="250" x2="400" y2="300"/>
+    <line x1="400" y1="180" x2="550" y2="200"/>
+    <line x1="400" y1="300" x2="550" y2="200"/>
+    <line x1="550" y1="200" x2="700" y2="240"/>
+  </g>
+
+  <!-- Robot Arm Linkages -->
+  <g transform="translate(350, 360)">
+    <!-- Base Plate -->
+    <ellipse cx="0" cy="0" rx="70" ry="22" fill="#334155" stroke="#64748b" stroke-width="2"/>
+    <rect x="-35" y="-30" width="70" height="30" fill="#475569"/>
+
+    <!-- Joint 1 & Arm 1 -->
+    <circle cx="0" cy="-30" r="22" fill="#0284c7" stroke="#38bdf8" stroke-width="2"/>
+    <line x1="0" y1="-30" x2="70" y2="-130" stroke="#94a3b8" stroke-width="20" stroke-linecap="round"/>
+    
+    <!-- Joint 2 & Arm 2 -->
+    <circle cx="70" cy="-130" r="18" fill="#6366f1" stroke="#a5b4fc" stroke-width="2"/>
+    <line x1="70" y1="-130" x2="180" y2="-120" stroke="#cbd5e1" stroke-width="14" stroke-linecap="round"/>
+
+    <!-- End Effector / Tool with Sensor Aura -->
+    <circle cx="180" cy="-120" r="12" fill="#f43f5e"/>
+    <path d="M 180 -120 L 215 -140 M 180 -120 L 215 -100" stroke="#facc15" stroke-width="5" stroke-linecap="round"/>
+
+    <!-- PHM Waveform (Vibration Diagnostics) -->
+    <path d="M -220 -180 Q -170 -240 -120 -180 T -20 -180 T 80 -180 T 180 -180" fill="none" stroke="#38bdf8" stroke-width="3" opacity="0.8"/>
+    <path d="M -220 -180 Q -195 -130 -170 -180 T -120 -180 T -70 -180" fill="none" stroke="#a855f7" stroke-width="2" opacity="0.6"/>
+  </g>
+
+  <!-- Title Overlay -->
+  <text x="400" y="425" font-family="'Pretendard', sans-serif" font-weight="700" font-size="20" fill="#e0e7ff" text-anchor="middle" letter-spacing="1">AI PHM & AUTONOMOUS ROBOT CONTROL</text>
+  <text x="400" y="450" font-family="'Pretendard', sans-serif" font-weight="500" font-size="13" fill="#a5b4fc" text-anchor="middle" letter-spacing="2">TU KOREA MECHATRONICS LAB</text>
+</svg>
